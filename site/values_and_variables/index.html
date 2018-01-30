@@ -1,0 +1,784 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.3">
+    
+    
+      
+        <title>Values And Variables - Myst Language</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.aa3de92b.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#values-and-variables" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Myst Language" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Myst Language
+              </span>
+              <span class="md-header-nav__topic">
+                Values And Variables
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Myst Language
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Myst" class="md-nav__link">
+      Myst
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Values And Variables
+      </label>
+    
+    <a href="./" title="Values And Variables" class="md-nav__link md-nav__link--active">
+      Values And Variables
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#value-literals" title="Value Literals" class="md-nav__link">
+    Value Literals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numerics" title="Numerics" class="md-nav__link">
+    Numerics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strings" title="Strings" class="md-nav__link">
+    Strings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#symbols" title="Symbols" class="md-nav__link">
+    Symbols
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collections" title="Collections" class="md-nav__link">
+    Collections
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" title="Variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#locals" title="Locals" class="md-nav__link">
+    Locals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#underscores" title="Underscores" class="md-nav__link">
+    Underscores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constants" title="Constants" class="md-nav__link">
+    Constants
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignments" title="Assignments" class="md-nav__link">
+    Assignments
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-assignments" title="Simple assignments" class="md-nav__link">
+    Simple assignments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational-assignments" title="Operational assignments" class="md-nav__link">
+    Operational assignments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#match-assignments" title="Match assignments" class="md-nav__link">
+    Match assignments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpolations" title="Interpolations" class="md-nav__link">
+    Interpolations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#value-literals" title="Value Literals" class="md-nav__link">
+    Value Literals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numerics" title="Numerics" class="md-nav__link">
+    Numerics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strings" title="Strings" class="md-nav__link">
+    Strings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#symbols" title="Symbols" class="md-nav__link">
+    Symbols
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collections" title="Collections" class="md-nav__link">
+    Collections
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" title="Variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#locals" title="Locals" class="md-nav__link">
+    Locals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#underscores" title="Underscores" class="md-nav__link">
+    Underscores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constants" title="Constants" class="md-nav__link">
+    Constants
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignments" title="Assignments" class="md-nav__link">
+    Assignments
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-assignments" title="Simple assignments" class="md-nav__link">
+    Simple assignments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational-assignments" title="Operational assignments" class="md-nav__link">
+    Operational assignments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#match-assignments" title="Match assignments" class="md-nav__link">
+    Match assignments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpolations" title="Interpolations" class="md-nav__link">
+    Interpolations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="values-and-variables">Values And Variables</h1>
+<p>Myst is a strong, dynamically typed language. At a high level, "strong" means that every value has a specified type, and will retain that type unless explicitly told to change, and "dynamic" means that variables can hold any type of value at any time.</p>
+<p>The exact meanings of "strong" and "dynamic" aren't entirely universal - people have varying ideas on the minor details - and can get surprisingly complex depending on how exact the definition is.</p>
+<p>However, as with many other concepts, Myst implements a more pragmatic approach. Later on, we'll see that Myst provides a few different ways to restrict the types that variables can accept. For now though, "strong" and "dynamic" are sufficient descriptions of Myst's type system.</p>
+<h2 id="value-literals"><strong>Value Literals</strong></h2>
+<p>Myst has a number of literal representations for values. These are the most basic way of creating new values in a program. Some examples of literals include:</p>
+<div class="codehilite"><pre><span></span><span class="kp">nil</span>           <span class="c1"># Nil (`null` in some languages)</span>
+<span class="kp">false</span>         <span class="c1"># Boolean</span>
+<span class="kp">true</span>          <span class="c1"># Boolean</span>
+<span class="mi">1</span>             <span class="c1"># Integer</span>
+<span class="mi">1</span><span class="o">.</span><span class="mi">0</span>           <span class="c1"># Float</span>
+<span class="s2">&quot;hello&quot;</span>       <span class="c1"># String</span>
+<span class="ss">:hello</span>        <span class="c1"># Symbol</span>
+<span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span>     <span class="c1"># List</span>
+<span class="p">{</span><span class="ss">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="ss">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>  <span class="c1"># Map</span>
+</pre></div>
+
+<p><code class="codehilite">nil</code>, <code class="codehilite">false</code>, and <code class="codehilite">true</code> are all <em>constant literals</em>. That is, they always refer to the same object, and the same keyword is always used to refer to them. All other literals are mutable, in the sense that the exact representation can vary.</p>
+<h2 id="numerics"><strong>Numerics</strong></h2>
+<p>Numerics are values that represent numbers. Myst supports Integers and Floats as numeric values.</p>
+<p>An Integer is any whole number, such as <code class="codehilite">2</code>, <code class="codehilite">100</code>, or <code class="codehilite">987654321</code>. Integer literals in Myst can also contain underscores to help separate groups of digits. This is particularly useful for large numbers. For example, compare these two representations of 1 billion:</p>
+<div class="codehilite"><pre><span></span><span class="mi">11000000000</span>
+<span class="mi">21_000_000_000</span>
+</pre></div>
+
+<p>In the version with underscores, it's clear to see that there are 3 groups of <code class="codehilite">000</code>'s, allowing someone reading the code to quickly see that the value is 1 billion.</p>
+<p>Floats are real numbers that may contain decimal values, such as <code class="codehilite">1.0</code>, <code class="codehilite">2.345</code>, or <code class="codehilite">123.456789</code>. Notice that <code class="codehilite">1.0</code> is a whole number, and thus technically an integer, but the representation as <code class="codehilite">1.0</code> indicates to Myst that the value is a Float. This relates to the strong typing mentioned above, where operations like division may behave differently based on the type of the operands.</p>
+<p>As with Integers, underscores are allowed in Float literals, both before and after the decimal point:</p>
+<div class="codehilite"><pre><span></span><span class="mi">123_456</span><span class="o">.</span><span class="mi">789_0123</span>
+</pre></div>
+
+<p>There is no restriction on how many underscores can be given in a literal, or that they have to form groups of 3. The following are all valid numeric literals, though they are generally avoided for consistency:</p>
+<div class="codehilite"><pre><span></span>11_
+2100_00
+3255_._255
+41_2_3_4
+59_____9
+</pre></div>
+
+<h2 id="strings"><strong>Strings</strong></h2>
+<p>A String is any series of zero or more characters contained between two double quote (<code class="codehilite">&quot;</code>) characters. The following are all valid strings:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;myst&quot;</span>
+<span class="s2">&quot;&quot;</span>
+<span class="s2">&quot;hello, world!&quot;</span>
+<span class="s2">&quot;1 + 2 == 3&quot;</span>
+</pre></div>
+
+<p>All whitespace within a string is preserved, meaning Strings can span multiple lines:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;hello,</span>
+<span class="s2">world&quot;</span>
+</pre></div>
+
+<p>Alternatively, this could be condensed using an escape sequence for the newline character:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;hello,</span><span class="se">\n</span><span class="s2">world&quot;</span>
+</pre></div>
+
+<p>Other escape sequences include tab characters (<code class="codehilite">\t</code>), null terminators (<code class="codehilite">\0</code>), and a double quote within the string (<code class="codehilite">\&quot;</code>). If a String needs to contain the <code class="codehilite">\</code> character itself, it must also be escaped to avoid ambiguity:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;hi \o&quot;</span>  <span class="c1">#=&gt; The `\` will escape the `o`.</span>
+<span class="s2">&quot;hi </span><span class="se">\\</span><span class="s2">o&quot;</span> <span class="c1">#=&gt; The String will contain a `\` character.</span>
+</pre></div>
+
+<h2 id="symbols"><strong>Symbols</strong></h2>
+<p>Symbols are similar to Strings, but with a different representation within the language that we'll cover soon.</p>
+<p>A Symbol literal is a <em>name</em> or <em>identifier</em> prefixed with a colon. The following would all be interpreted as Symbols in Myst:</p>
+<div class="codehilite"><pre><span></span><span class="ss">:hello</span>
+<span class="ss">:two_words</span>
+<span class="ss">:true</span>
+<span class="ss">:false</span>
+<span class="ss">:nil</span>
+<span class="ss">:__with_some_underscores___</span>
+<span class="ss">:numbers123</span>
+</pre></div>
+
+<p>Additionally, Symbols can be created from a String literal the same way. This is useful for creating symbols with spaces in the name or with other special characters:</p>
+<div class="codehilite"><pre><span></span><span class="ss">:&quot; &quot;</span>
+<span class="ss">:&quot;hello, world&quot;</span>
+<span class="ss">:&quot;+&quot;</span>
+<span class="ss">:&quot; /afs% 1234&quot;</span>
+</pre></div>
+
+<p>Now, the way that Symbols are different than Strings is how they are stored within the language. Each Symbol is represented as an Integer. More importantly, every Symbol with the same name is represented by the <em>same</em> Integer. So, a Symbol, <code class="codehilite">:name</code>, may be represented by the Integer <code class="codehilite">153</code>, then another Symbol, <code class="codehilite">:name</code>, would also be represented by <code class="codehilite">153</code>.</p>
+<p>This makes comparisons with Symbols extremely efficient (just comparing two integers, rather than each character in the name), which makes them great for cases where the name of the Symbol isn't necessarily important, but performance matters (such as Maps, as seen below).</p>
+<h2 id="collections"><strong>Collections</strong></h2>
+<p>Apart from the individual literal types, Myst also has literal representations of two collection types: Lists and Maps. These are very common in Myst code, so it's important that they be easily and clearly represented.</p>
+<p>A List is an ordered collection of values. Any combination of values can be added to a List. List literals are surrounded by square braces (<code class="codehilite">[</code> and <code class="codehilite">]</code>), with each entry separated by a comma (and optionally some whitespace). All of the following are valid List literals:</p>
+<div class="codehilite"><pre><span></span><span class="o">[]</span>
+<span class="o">[</span><span class="mi">1</span><span class="o">]</span>
+<span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span>
+<span class="o">[</span><span class="kp">nil</span><span class="p">,</span> <span class="mi">1</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;hello&quot;</span><span class="o">]</span>
+<span class="o">[</span>
+  <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="kp">true</span><span class="p">,</span> <span class="kp">false</span><span class="p">,</span>
+  <span class="s2">&quot;hi&quot;</span><span class="p">,</span> <span class="ss">:hello</span>
+<span class="o">]</span>
+</pre></div>
+
+<p>Lists can also be nested within each other to create more complex structures:</p>
+<div class="codehilite"><pre><span></span><span class="o">[</span>
+  <span class="o">[</span><span class="kp">true</span><span class="p">,</span> <span class="mi">0</span><span class="o">]</span><span class="p">,</span>
+  <span class="o">[</span><span class="kp">false</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">]</span><span class="p">,</span>
+  <span class="o">[</span>
+    <span class="o">[</span><span class="s2">&quot;hi&quot;</span><span class="p">,</span> <span class="o">[]]</span><span class="p">,</span>
+    <span class="o">[</span><span class="ss">:hello</span><span class="p">,</span> <span class="kp">nil</span><span class="o">]</span>
+  <span class="o">]</span>
+<span class="o">]</span>
+</pre></div>
+
+<p>We'll see some more ways that Lists are useful in Myst later on.</p>
+<p>A Map, on the other hand, is a collection of key-value pairs. In Myst, the order of the entries is also preserved. By default, all Map keys will be Symbols, but the value can be of any type.</p>
+<p>A Map literal is created using curly braces (<code class="codehilite">{</code> and <code class="codehilite">}</code>), with comma-separated entries, similar to Lists. Each <em>entry</em> of a Map is written as a key name followed by a colon, followed by the value for that key. All of the following are valid Map literals:</p>
+<div class="codehilite"><pre><span></span><span class="p">{}</span>
+<span class="p">{</span><span class="ss">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+<span class="p">{</span><span class="ss">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="ss">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="p">{</span><span class="kp">true</span><span class="p">:</span> <span class="kp">true</span><span class="p">,</span> <span class="kp">false</span><span class="p">:</span> <span class="kp">false</span><span class="p">}</span>
+<span class="p">{</span>
+  <span class="ss">number1</span><span class="p">:</span> <span class="mi">1234</span><span class="p">,</span>
+  <span class="ss">__thing</span><span class="p">:</span> <span class="p">{</span>
+    <span class="ss">string</span><span class="p">:</span> <span class="s2">&quot;hi&quot;</span><span class="p">,</span>
+    <span class="ss">symbol</span><span class="p">:</span> <span class="ss">:hi</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Notice that the Symbol keys do not <em>start</em> with a colon, because the colon is instead placed <em>after</em> the name.</p>
+<p>Generally, Maps do <em>not</em> put a space between the braces and the entries of the Map, but <em>does</em> include a space between each entry. This is to avoid ambiguities with other braced constructs that we'll see later on.</p>
+<p>It's possible to use other types of values as keys for Maps, which we'll see later on, but the preference is to always use Symbols. Earlier, we saw how Symbols can be compared efficiently as Integers which makes their use as Map keys very effective. Using other types will generally slow down performance.</p>
+<p>A final note on collections: nesting is not limited to the same type. It's just as easy to create Lists of Maps or Maps of Lists. For example:</p>
+<div class="codehilite"><pre><span></span><span class="o">[</span>
+  <span class="p">{</span><span class="ss">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="ss">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span>
+  <span class="p">{</span><span class="ss">a</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="ss">b</span><span class="p">:</span> <span class="mi">4</span><span class="p">}</span>
+<span class="o">]</span>
+</pre></div>
+
+<h2 id="variables"><strong>Variables</strong></h2>
+<p>Variables are names that store values. For the most part, any value can be assigned to any variable at any time.</p>
+<p>All variable names in Myst are <em>identifiers</em>. An identifier is any series of letters, numbers, and/or underscores, with the restriction that the first character can not be a number. The casing and structure of the name determines it's <em>kind</em>.</p>
+<p>There are three main kinds of variables in Myst - Locals, Underscores, and Constants - each with a specific purpose and use case.</p>
+<h3 id="locals"><strong>Locals</strong></h3>
+<p>Local variables start with a lowercase alphabetic character and are generally written in <code class="codehilite">snake_case</code>. Locals can be freely assigned and referenced any number of times, and are generally used to hold temporary data.</p>
+<p>For example, when doing a complex calculation, intermediate results are generally held in local variables to make the final calculation more clear.</p>
+<p>Local variables are tied to the <em>lexical scope</em> that they are created in. In other words, variables created within a block of code will be destroyed once the block of code is finished running.</p>
+<p>All of the following are examples of valid local variable names:</p>
+<div class="codehilite"><pre><span></span><span class="n">x</span>
+<span class="n">a</span>
+<span class="n">something_longer</span>
+<span class="n">number1</span>
+<span class="n">num_456</span>
+</pre></div>
+
+<h3 id="underscores"><strong>Underscores</strong></h3>
+<p>Underscores are local variables that start with an ASCII underscore character, <code class="codehilite">_</code>.</p>
+<p>Just like locals, underscore variables can be assigned to and referenced any number of times. However, referencing an underscore variable will emit a warning.</p>
+<p>Generally, underscores are used to indicate that a variable is known to exist, but should not be used in the code. We'll see examples of how this is helpful later on, namely with function parameters and pattern matching.</p>
+<p>In some languages, there is a pattern of using a single underscore character to indicate that a value is unwanted. Some languages even treat the single underscore specially.</p>
+<p>Other languages, Myst included, treat all underscore variables equally. As such, it's often useful to provide a more descriptive name for the underscore variable in case it may become useful in the future.</p>
+<p>For example, this code is entirely valid:</p>
+<div class="codehilite"><pre><span></span><span class="o">[</span><span class="n">first_name</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="o">]</span> <span class="o">=</span> <span class="n">some_method</span>
+</pre></div>
+
+<p>We'll cover exactly what this means later on, but it's obvious that there are three values we don't <em>currently</em> care about. The issue is that without looking at the definition of <code class="codehilite">some_method</code>, it's hard to tell <em>what</em> those values are, and if they could be useful in the code that follows it.</p>
+<p>A better version of the above would be something like this:</p>
+<div class="codehilite"><pre><span></span><span class="o">[</span><span class="n">first</span><span class="p">,</span> <span class="n">_last</span><span class="p">,</span> <span class="n">_age</span><span class="p">,</span> <span class="n">_city</span><span class="o">]</span> <span class="o">=</span> <span class="n">some_method</span>
+</pre></div>
+
+<p>Here, we can see what the other three values are, but they are still marked as undercsore variables, meaning we don't currently have a use for them.</p>
+<h3 id="constants"><strong>Constants</strong></h3>
+<p>Constants start with uppercase alphabetic characters, and are written either in <code class="codehilite">UpperCamelCase</code>, or <code class="codehilite">SCREAMING_CASE</code>. Constants also have different semantics than underscores and local variables.</p>
+<p>A constant variable can only be assigned once. Assigning to a constant more than once will raise an error. As such, constants are generally used to hold values that are not expected to change very often. For example, the seasons of a year:</p>
+<div class="codehilite"><pre><span></span><span class="no">SEASONS</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;spring&quot;</span><span class="p">,</span> <span class="s2">&quot;summer&quot;</span><span class="p">,</span> <span class="s2">&quot;fall&quot;</span><span class="p">,</span> <span class="s2">&quot;winter&quot;</span><span class="o">]</span>
+</pre></div>
+
+<p>Note that while the constant <em>itself</em> cannot be reassigned, its value may still be changed by other operations. For example, a new season could be added just by adding to the end of the list.</p>
+<div class="codehilite"><pre><span></span><span class="no">SEASONS</span><span class="o">[</span><span class="mi">4</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;some new season&quot;</span>
+</pre></div>
+
+<p>We'll cover more about what this code means later on, but the important part here is that constants can still be modified, even though they can only be assigned once.</p>
+<p>The other primary use of constants is to represent types and modules. Earlier in this section, you may have noticed that we always refer to the type of a value with a capital letter at the start. This is to match the name of the type within Myst. Types like <code class="codehilite">Integer</code>, <code class="codehilite">Float</code>, and <code class="codehilite">List</code> are all constants within Myst.</p>
+<p>Types and modules will be covered in more detail later on, but know for now that a variable written in <code class="codehilite">UpperCamelCase</code> is generally referring to either a type or a module.</p>
+<h2 id="assignments"><strong>Assignments</strong></h2>
+<p>Assignments are the primary way of creating new variables. All assignments consist of a <em>target</em> (the left side), an assignment operator, and a <em>value</em> (the right side).</p>
+<h3 id="simple-assignments"><strong>Simple assignments</strong></h3>
+<p>Most assignments are technically <em>simple assignments</em>. Myst also has two other kinds of assignments ("match" and "operational") with different semantics.</p>
+<p>A simple assignment is made with a variable name (called the <em>target</em>) followed by an equals sign (<code class="codehilite">=</code>) and then some value to be assigned. We've seen this a few times already, but here's a more complete example:</p>
+<div class="codehilite"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#=&gt; 1</span>
+<span class="n">x</span>     <span class="c1">#=&gt; 1</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1">#=&gt; 2</span>
+<span class="n">x</span>     <span class="c1">#=&gt; 2</span>
+</pre></div>
+
+<p>The comment on each line shows what the value of x is after the line has finished running.</p>
+<h3 id="operational-assignments"><strong>Operational assignments</strong></h3>
+<p>It's fairly common for an assignment to include the target in the value being assigned. For example, incrementing a variable by one might look somtehing like this:</p>
+<div class="codehilite"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+
+<p>Especially with longer variable names, the repetition of the name creates unnecessary noise and often makes the assignment harder to understand at a glance.</p>
+<p>To improve this, Myst provides <em>operational assignments</em>, which include the operation being performed as part of the assignment operator. The above example could be written as an operational assignment like this:</p>
+<div class="codehilite"><pre><span></span><span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+<p>The full semantics of operational assignments will be covered in the Basic Operations section.</p>
+<h3 id="match-assignments"><strong>Match assignments</strong></h3>
+<p>Match assignments use the match operator (<code class="codehilite">=:</code>). Match assignments are unique in that an assignment will not necessarily occur. Instead, the "assignment" is an expectation about the <em>value</em> of the assignment, rather than the <em>target</em>.</p>
+<p>The full semantics of match assignments will be covered later on in the Pattern Matching section.</p>
+<h3 id="interpolations"><strong>Interpolations</strong></h3>
+<p>One of the truly unique features of Myst as a language is the ability to interpolate (or <em>inject</em>) any value into another other section of code. An interpolation is creating using angle braces (&lt; and &gt;) with some expression between them.</p>
+<p>In the Maps section, we saw that Map keys are almost always Symbols, but that it's possible to use other values for keys as well. One way to do this is to use interpolations:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="o">&lt;</span><span class="kp">true</span><span class="o">&gt;</span><span class="p">:</span>       <span class="ss">:true</span><span class="p">,</span>
+  <span class="o">&lt;</span><span class="s2">&quot;hello&quot;</span><span class="o">&gt;</span><span class="p">:</span>    <span class="ss">:string</span><span class="p">,</span>
+  <span class="o">&lt;[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]&gt;</span><span class="p">:</span>  <span class="ss">:list</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>With this syntax, it's possible to use <em>any</em> value as the key for a Map entry, even Lists or other Maps. But, as mentioned before, using keys other than Symbols will hinder performance.</p>
+<p>Interpolations also allow operations within the interpolation for even more powerful behavior. For example, variables can be referenced within an interpolation,and calls to other functions can be made:</p>
+<div class="codehilite"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">list</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span>
+<span class="p">{</span>
+  <span class="o">&lt;</span><span class="n">x</span><span class="o">&gt;</span><span class="p">:</span> <span class="ss">:one</span><span class="p">,</span>
+  <span class="o">&lt;</span><span class="n">list</span><span class="o">[</span><span class="mi">2</span><span class="o">]&gt;</span> <span class="ss">:three</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>In fact, <em>any</em> expression can be used inside of an interpolation, but will require additional parentheses to avoid ambiguity with the less-than and greater-than operations:</p>
+<div class="codehilite"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="p">{</span>
+  <span class="o">&lt;</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span><span class="o">&gt;</span><span class="p">:</span> <span class="ss">:three</span><span class="p">,</span>
+  <span class="o">&lt;</span><span class="p">(</span><span class="n">x</span> <span class="o">/</span> <span class="mi">3</span><span class="p">)</span><span class="o">&gt;</span><span class="p">:</span> <span class="ss">:five</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>All of the examples so far have shown interpolations used for creating keys in a Map. While interpolations are allowed anywhere in Myst code, they generally don't have any additional effects that make them useful. For example, these two lines are equivalent:</p>
+<div class="codehilite"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="o">&lt;</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+</pre></div>
+
+<p>Another common use for interpolations is inside of Strings. In addition to evaluating an expression in-place, String interpolations will also convert the result into a String representation before inserting it into the String:</p>
+<div class="codehilite"><pre><span></span><span class="nb">name</span> <span class="o">=</span> <span class="s2">&quot;John Smith&quot;</span>
+<span class="s2">&quot;hello, &lt;(name)&gt;!&quot;</span> <span class="c1">#=&gt; &quot;hello, John Smith!&quot;</span>
+</pre></div>
+
+<p>Note that string interpolations <em>always</em> require the additional parentheses around the expression being interpolated.</p>
+<p>String interpolations are expanded by the language into separate components for the literal String parts and the expressions, then summed together to create the result. The exact expansion would look like this:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># Given a string like this:</span>
+<span class="s2">&quot;1 + 2 = &lt;(1 + 2)&gt;!&quot;</span>
+<span class="c1"># The language would interpret it as:</span>
+<span class="s2">&quot;1 + 2 = &quot;</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to_s</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span>
+</pre></div>
+
+<p>This expansion is <em>semantically</em> the same as what the language ends up doing, but would perform slower than the interpolated version since the language can make some optimizations when the values are interpolated.</p>
+<p>The last main use case of interpolations is in pattern matching, which we'll see later on in the Pattern Matching section.</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Myst" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Myst
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.f041762f.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
