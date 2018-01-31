@@ -48,11 +48,11 @@ As with Integers, underscores are allowed in Float literals, both before and aft
 There is no restriction on how many underscores can be given in a literal, or that they have to form groups of 3. The following are all valid numeric literals, though they are generally avoided for consistency:
 
 ```
-11_
-2100_00
-3255_._255
-41_2_3_4
-59_____9
+1_
+100_00
+255_._255
+1_2_3_4
+9_____9
 ```
 
 ## **Strings**
